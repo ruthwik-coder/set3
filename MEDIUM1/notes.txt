@@ -1,0 +1,2 @@
+python3 db.py --db data.sqlite
+

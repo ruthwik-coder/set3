@@ -1,0 +1,1155 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Database Analysis Report - Your Team Name</title>
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; margin: 20px; color: #222 }
+    h1,h2,h3 { color: #0b3d91 }
+    .summary { background: #f6f8fb; padding: 12px; border-radius: 6px; }
+    .table-block { margin-bottom: 24px; }
+    img { max-width: 100%; height: auto; border: 1px solid #ddd; padding: 4px; background: #fff }
+    .meta { font-size: 0.9em; color: #555 }
+    pre { background:#eee; padding:12px; overflow:auto }
+  </style>
+</head>
+<body>
+  <h1>Database Analysis Report - Your Team Name</h1>
+  <p class="meta">Analysis Date: 2025-11-27 14:47:39</p>
+
+  <h2>DATABASE SUMMARY</h2>
+  <div class="summary">
+    <ul>
+      <li>Total Tables: 18</li>
+      <li>Total Rows (approx): 1427770</li>
+      <li>Top Tables: <strong>dbo_F_AR_Detail</strong> (520089), <strong>"dbo_F_AR_Detail"</strong> (520089), <strong>dbo_F_Sales_Transaction</strong> (81423), <strong>"dbo_F_Sales_Transaction"</strong> (81423), <strong>dbo_F_Sales_Order</strong> (80226)</li>
+    </ul>
+  </div>
+
+  <h2>KEY INSIGHTS</h2>
+  <ol>
+  
+    <li>Column dbo_D_Customer.Customer Status has 2632 nulls out of 2632 rows (100%). Consider investigating or filling missing values.</li>
+  
+    <li>Column dbo_D_Customer.Origin Date has 2632 nulls out of 2632 rows (100%). Consider investigating or filling missing values.</li>
+  
+    <li>Column dbo_D_Customer.Customer Address 2 has 2632 nulls out of 2632 rows (100%). Consider investigating or filling missing values.</li>
+  
+    <li>Column dbo_D_Customer.Customer Address 3 has 2632 nulls out of 2632 rows (100%). Consider investigating or filling missing values.</li>
+  
+    <li>Column dbo_D_Customer.Bill-to Customer Number has 2632 nulls out of 2632 rows (100%). Consider investigating or filling missing values.</li>
+  
+    <li>Consider checking foreign key relationships for columns named *_id; automated detection attempted in schema output.</li>
+  
+  </ol>
+
+  <h2>VISUALIZATIONS</h2>
+  
+    <div class="table-block">
+      <h3>Row counts per table</h3>
+      <img src="chart_row_counts.png" alt="Row counts per table"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Correlation heatmap — dbo_D_Customer</h3>
+      <img src="images/dbo_D_Customer__heatmap.png" alt="Correlation heatmap — dbo_D_Customer"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Distribution — dbo_D_Customer__hist_Credit Limit Amount.png</h3>
+      <img src="images/dbo_D_Customer__hist_Credit Limit Amount.png" alt="Distribution — dbo_D_Customer__hist_Credit Limit Amount.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Distribution — dbo_D_Customer__hist_Customer Number.png</h3>
+      <img src="images/dbo_D_Customer__hist_Customer Number.png" alt="Distribution — dbo_D_Customer__hist_Customer Number.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Scatter — dbo_D_Customer__scatter_Customer Key_vs_Bill-to Customer Key.png</h3>
+      <img src="images/dbo_D_Customer__scatter_Customer Key_vs_Bill-to Customer Key.png" alt="Scatter — dbo_D_Customer__scatter_Customer Key_vs_Bill-to Customer Key.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Correlation heatmap — dbo_D_Customer_Category_Hierarchy</h3>
+      <img src="images/dbo_D_Customer_Category_Hierarchy__heatmap.png" alt="Correlation heatmap — dbo_D_Customer_Category_Hierarchy"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Distribution — dbo_D_Customer_Category_Hierarchy__hist_Customer Category Hrchy Key.png</h3>
+      <img src="images/dbo_D_Customer_Category_Hierarchy__hist_Customer Category Hrchy Key.png" alt="Distribution — dbo_D_Customer_Category_Hierarchy__hist_Customer Category Hrchy Key.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Distribution — dbo_D_Customer_Category_Hierarchy__hist_Customer Category Hrchy Code.png</h3>
+      <img src="images/dbo_D_Customer_Category_Hierarchy__hist_Customer Category Hrchy Code.png" alt="Distribution — dbo_D_Customer_Category_Hierarchy__hist_Customer Category Hrchy Code.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Scatter — dbo_D_Customer_Category_Hierarchy__scatter_Customer Category Hrchy Key_vs_Deleted Flag.png</h3>
+      <img src="images/dbo_D_Customer_Category_Hierarchy__scatter_Customer Category Hrchy Key_vs_Deleted Flag.png" alt="Scatter — dbo_D_Customer_Category_Hierarchy__scatter_Customer Category Hrchy Key_vs_Deleted Flag.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Correlation heatmap — dbo_D_Customer_Geography_Hierarchy</h3>
+      <img src="images/dbo_D_Customer_Geography_Hierarchy__heatmap.png" alt="Correlation heatmap — dbo_D_Customer_Geography_Hierarchy"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Distribution — dbo_D_Customer_Geography_Hierarchy__hist_Customer Geography Hrchy Key.png</h3>
+      <img src="images/dbo_D_Customer_Geography_Hierarchy__hist_Customer Geography Hrchy Key.png" alt="Distribution — dbo_D_Customer_Geography_Hierarchy__hist_Customer Geography Hrchy Key.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Distribution — dbo_D_Customer_Geography_Hierarchy__hist_Deleted Flag.png</h3>
+      <img src="images/dbo_D_Customer_Geography_Hierarchy__hist_Deleted Flag.png" alt="Distribution — dbo_D_Customer_Geography_Hierarchy__hist_Deleted Flag.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Scatter — dbo_D_Customer_Geography_Hierarchy__scatter_Customer Geography Hrchy Key_vs_Deleted Flag.png</h3>
+      <img src="images/dbo_D_Customer_Geography_Hierarchy__scatter_Customer Geography Hrchy Key_vs_Deleted Flag.png" alt="Scatter — dbo_D_Customer_Geography_Hierarchy__scatter_Customer Geography Hrchy Key_vs_Deleted Flag.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Correlation heatmap — dbo_D_Item</h3>
+      <img src="images/dbo_D_Item__heatmap.png" alt="Correlation heatmap — dbo_D_Item"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Distribution — dbo_D_Item__hist_Unit Price.png</h3>
+      <img src="images/dbo_D_Item__hist_Unit Price.png" alt="Distribution — dbo_D_Item__hist_Unit Price.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Distribution — dbo_D_Item__hist_Unit Cost.png</h3>
+      <img src="images/dbo_D_Item__hist_Unit Cost.png" alt="Distribution — dbo_D_Item__hist_Unit Cost.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Time series — dbo_D_Item__timeseries_Origin Date.png</h3>
+      <img src="images/dbo_D_Item__timeseries_Origin Date.png" alt="Time series — dbo_D_Item__timeseries_Origin Date.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Scatter — dbo_D_Item__scatter_Item Key_vs_Buyer Key.png</h3>
+      <img src="images/dbo_D_Item__scatter_Item Key_vs_Buyer Key.png" alt="Scatter — dbo_D_Item__scatter_Item Key_vs_Buyer Key.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Correlation heatmap — dbo_D_Sales_Organization</h3>
+      <img src="images/dbo_D_Sales_Organization__heatmap.png" alt="Correlation heatmap — dbo_D_Sales_Organization"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Distribution — dbo_D_Sales_Organization__hist_Salesperson Code.png</h3>
+      <img src="images/dbo_D_Sales_Organization__hist_Salesperson Code.png" alt="Distribution — dbo_D_Sales_Organization__hist_Salesperson Code.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Distribution — dbo_D_Sales_Organization__hist_Sales Organization Key.png</h3>
+      <img src="images/dbo_D_Sales_Organization__hist_Sales Organization Key.png" alt="Distribution — dbo_D_Sales_Organization__hist_Sales Organization Key.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Scatter — dbo_D_Sales_Organization__scatter_Sales Organization Key_vs_Sales Activity Flag.png</h3>
+      <img src="images/dbo_D_Sales_Organization__scatter_Sales Organization Key_vs_Sales Activity Flag.png" alt="Scatter — dbo_D_Sales_Organization__scatter_Sales Organization Key_vs_Sales Activity Flag.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Correlation heatmap — dbo_F_AR_Detail</h3>
+      <img src="images/dbo_F_AR_Detail__heatmap.png" alt="Correlation heatmap — dbo_F_AR_Detail"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Distribution — dbo_F_AR_Detail__hist_AR Header Id.png</h3>
+      <img src="images/dbo_F_AR_Detail__hist_AR Header Id.png" alt="Distribution — dbo_F_AR_Detail__hist_AR Header Id.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Distribution — dbo_F_AR_Detail__hist_AR Detail Id.png</h3>
+      <img src="images/dbo_F_AR_Detail__hist_AR Detail Id.png" alt="Distribution — dbo_F_AR_Detail__hist_AR Detail Id.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Time series — dbo_F_AR_Detail__timeseries_Txn Date.png</h3>
+      <img src="images/dbo_F_AR_Detail__timeseries_Txn Date.png" alt="Time series — dbo_F_AR_Detail__timeseries_Txn Date.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Time series — dbo_F_AR_Detail__timeseries_Posting Date.png</h3>
+      <img src="images/dbo_F_AR_Detail__timeseries_Posting Date.png" alt="Time series — dbo_F_AR_Detail__timeseries_Posting Date.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Scatter — dbo_F_AR_Detail__scatter_AR Detail Key_vs_Record Type.png</h3>
+      <img src="images/dbo_F_AR_Detail__scatter_AR Detail Key_vs_Record Type.png" alt="Scatter — dbo_F_AR_Detail__scatter_AR Detail Key_vs_Record Type.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Correlation heatmap — dbo_F_Sales_Goal</h3>
+      <img src="images/dbo_F_Sales_Goal__heatmap.png" alt="Correlation heatmap — dbo_F_Sales_Goal"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Distribution — dbo_F_Sales_Goal__hist_Sales Goal Key.png</h3>
+      <img src="images/dbo_F_Sales_Goal__hist_Sales Goal Key.png" alt="Distribution — dbo_F_Sales_Goal__hist_Sales Goal Key.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Distribution — dbo_F_Sales_Goal__hist_Sales Goal Id.png</h3>
+      <img src="images/dbo_F_Sales_Goal__hist_Sales Goal Id.png" alt="Distribution — dbo_F_Sales_Goal__hist_Sales Goal Id.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Time series — dbo_F_Sales_Goal__timeseries_Goal Date.png</h3>
+      <img src="images/dbo_F_Sales_Goal__timeseries_Goal Date.png" alt="Time series — dbo_F_Sales_Goal__timeseries_Goal Date.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Scatter — dbo_F_Sales_Goal__scatter_Sales Goal Key_vs_Customer Key.png</h3>
+      <img src="images/dbo_F_Sales_Goal__scatter_Sales Goal Key_vs_Customer Key.png" alt="Scatter — dbo_F_Sales_Goal__scatter_Sales Goal Key_vs_Customer Key.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Correlation heatmap — dbo_F_Sales_Order</h3>
+      <img src="images/dbo_F_Sales_Order__heatmap.png" alt="Correlation heatmap — dbo_F_Sales_Order"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Distribution — dbo_F_Sales_Order__hist_Sales Order Key.png</h3>
+      <img src="images/dbo_F_Sales_Order__hist_Sales Order Key.png" alt="Distribution — dbo_F_Sales_Order__hist_Sales Order Key.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Distribution — dbo_F_Sales_Order__hist_Posting Date Key.png</h3>
+      <img src="images/dbo_F_Sales_Order__hist_Posting Date Key.png" alt="Distribution — dbo_F_Sales_Order__hist_Posting Date Key.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Time series — dbo_F_Sales_Order__timeseries_Order Date.png</h3>
+      <img src="images/dbo_F_Sales_Order__timeseries_Order Date.png" alt="Time series — dbo_F_Sales_Order__timeseries_Order Date.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Time series — dbo_F_Sales_Order__timeseries_Posting Date.png</h3>
+      <img src="images/dbo_F_Sales_Order__timeseries_Posting Date.png" alt="Time series — dbo_F_Sales_Order__timeseries_Posting Date.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Time series — dbo_F_Sales_Order__timeseries_Target Ship Date.png</h3>
+      <img src="images/dbo_F_Sales_Order__timeseries_Target Ship Date.png" alt="Time series — dbo_F_Sales_Order__timeseries_Target Ship Date.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Time series — dbo_F_Sales_Order__timeseries_Promised Ship Date.png</h3>
+      <img src="images/dbo_F_Sales_Order__timeseries_Promised Ship Date.png" alt="Time series — dbo_F_Sales_Order__timeseries_Promised Ship Date.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Scatter — dbo_F_Sales_Order__scatter_Sales Order Key_vs_Record Type.png</h3>
+      <img src="images/dbo_F_Sales_Order__scatter_Sales Order Key_vs_Record Type.png" alt="Scatter — dbo_F_Sales_Order__scatter_Sales Order Key_vs_Record Type.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Correlation heatmap — dbo_F_Sales_Pipeline_Snapshot</h3>
+      <img src="images/dbo_F_Sales_Pipeline_Snapshot__heatmap.png" alt="Correlation heatmap — dbo_F_Sales_Pipeline_Snapshot"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Distribution — dbo_F_Sales_Pipeline_Snapshot__hist_Pipeline Snapshot Key.png</h3>
+      <img src="images/dbo_F_Sales_Pipeline_Snapshot__hist_Pipeline Snapshot Key.png" alt="Distribution — dbo_F_Sales_Pipeline_Snapshot__hist_Pipeline Snapshot Key.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Distribution — dbo_F_Sales_Pipeline_Snapshot__hist_Quote Amount.png</h3>
+      <img src="images/dbo_F_Sales_Pipeline_Snapshot__hist_Quote Amount.png" alt="Distribution — dbo_F_Sales_Pipeline_Snapshot__hist_Quote Amount.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Time series — dbo_F_Sales_Pipeline_Snapshot__timeseries_Snapshot Date.png</h3>
+      <img src="images/dbo_F_Sales_Pipeline_Snapshot__timeseries_Snapshot Date.png" alt="Time series — dbo_F_Sales_Pipeline_Snapshot__timeseries_Snapshot Date.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Scatter — dbo_F_Sales_Pipeline_Snapshot__scatter_Pipeline Snapshot Key_vs_Facility Key.png</h3>
+      <img src="images/dbo_F_Sales_Pipeline_Snapshot__scatter_Pipeline Snapshot Key_vs_Facility Key.png" alt="Scatter — dbo_F_Sales_Pipeline_Snapshot__scatter_Pipeline Snapshot Key_vs_Facility Key.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Correlation heatmap — dbo_F_Sales_Transaction</h3>
+      <img src="images/dbo_F_Sales_Transaction__heatmap.png" alt="Correlation heatmap — dbo_F_Sales_Transaction"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Distribution — dbo_F_Sales_Transaction__hist_Sales Txn Key.png</h3>
+      <img src="images/dbo_F_Sales_Transaction__hist_Sales Txn Key.png" alt="Distribution — dbo_F_Sales_Transaction__hist_Sales Txn Key.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Distribution — dbo_F_Sales_Transaction__hist_Posting Date Key.png</h3>
+      <img src="images/dbo_F_Sales_Transaction__hist_Posting Date Key.png" alt="Distribution — dbo_F_Sales_Transaction__hist_Posting Date Key.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Time series — dbo_F_Sales_Transaction__timeseries_Txn Date.png</h3>
+      <img src="images/dbo_F_Sales_Transaction__timeseries_Txn Date.png" alt="Time series — dbo_F_Sales_Transaction__timeseries_Txn Date.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Time series — dbo_F_Sales_Transaction__timeseries_Posting Date.png</h3>
+      <img src="images/dbo_F_Sales_Transaction__timeseries_Posting Date.png" alt="Time series — dbo_F_Sales_Transaction__timeseries_Posting Date.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Scatter — dbo_F_Sales_Transaction__scatter_Sales Txn Key_vs_Record Type.png</h3>
+      <img src="images/dbo_F_Sales_Transaction__scatter_Sales Txn Key_vs_Record Type.png" alt="Scatter — dbo_F_Sales_Transaction__scatter_Sales Txn Key_vs_Record Type.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Correlation heatmap — "dbo_D_Customer"</h3>
+      <img src="images/"dbo_D_Customer"__heatmap.png" alt="Correlation heatmap — "dbo_D_Customer""/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Distribution — "dbo_D_Customer"__hist_Credit Limit Amount.png</h3>
+      <img src="images/"dbo_D_Customer"__hist_Credit Limit Amount.png" alt="Distribution — "dbo_D_Customer"__hist_Credit Limit Amount.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Distribution — "dbo_D_Customer"__hist_Customer Number.png</h3>
+      <img src="images/"dbo_D_Customer"__hist_Customer Number.png" alt="Distribution — "dbo_D_Customer"__hist_Customer Number.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Scatter — "dbo_D_Customer"__scatter_Customer Key_vs_Bill-to Customer Key.png</h3>
+      <img src="images/"dbo_D_Customer"__scatter_Customer Key_vs_Bill-to Customer Key.png" alt="Scatter — "dbo_D_Customer"__scatter_Customer Key_vs_Bill-to Customer Key.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Correlation heatmap — "dbo_D_Customer_Category_Hierarchy"</h3>
+      <img src="images/"dbo_D_Customer_Category_Hierarchy"__heatmap.png" alt="Correlation heatmap — "dbo_D_Customer_Category_Hierarchy""/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Distribution — "dbo_D_Customer_Category_Hierarchy"__hist_Customer Category Hrchy Key.png</h3>
+      <img src="images/"dbo_D_Customer_Category_Hierarchy"__hist_Customer Category Hrchy Key.png" alt="Distribution — "dbo_D_Customer_Category_Hierarchy"__hist_Customer Category Hrchy Key.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Distribution — "dbo_D_Customer_Category_Hierarchy"__hist_Customer Category Hrchy Code.png</h3>
+      <img src="images/"dbo_D_Customer_Category_Hierarchy"__hist_Customer Category Hrchy Code.png" alt="Distribution — "dbo_D_Customer_Category_Hierarchy"__hist_Customer Category Hrchy Code.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Scatter — "dbo_D_Customer_Category_Hierarchy"__scatter_Customer Category Hrchy Key_vs_Deleted Flag.png</h3>
+      <img src="images/"dbo_D_Customer_Category_Hierarchy"__scatter_Customer Category Hrchy Key_vs_Deleted Flag.png" alt="Scatter — "dbo_D_Customer_Category_Hierarchy"__scatter_Customer Category Hrchy Key_vs_Deleted Flag.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Correlation heatmap — "dbo_D_Customer_Geography_Hierarchy"</h3>
+      <img src="images/"dbo_D_Customer_Geography_Hierarchy"__heatmap.png" alt="Correlation heatmap — "dbo_D_Customer_Geography_Hierarchy""/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Distribution — "dbo_D_Customer_Geography_Hierarchy"__hist_Customer Geography Hrchy Key.png</h3>
+      <img src="images/"dbo_D_Customer_Geography_Hierarchy"__hist_Customer Geography Hrchy Key.png" alt="Distribution — "dbo_D_Customer_Geography_Hierarchy"__hist_Customer Geography Hrchy Key.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Distribution — "dbo_D_Customer_Geography_Hierarchy"__hist_Deleted Flag.png</h3>
+      <img src="images/"dbo_D_Customer_Geography_Hierarchy"__hist_Deleted Flag.png" alt="Distribution — "dbo_D_Customer_Geography_Hierarchy"__hist_Deleted Flag.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Scatter — "dbo_D_Customer_Geography_Hierarchy"__scatter_Customer Geography Hrchy Key_vs_Deleted Flag.png</h3>
+      <img src="images/"dbo_D_Customer_Geography_Hierarchy"__scatter_Customer Geography Hrchy Key_vs_Deleted Flag.png" alt="Scatter — "dbo_D_Customer_Geography_Hierarchy"__scatter_Customer Geography Hrchy Key_vs_Deleted Flag.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Correlation heatmap — "dbo_D_Item"</h3>
+      <img src="images/"dbo_D_Item"__heatmap.png" alt="Correlation heatmap — "dbo_D_Item""/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Distribution — "dbo_D_Item"__hist_Unit Price.png</h3>
+      <img src="images/"dbo_D_Item"__hist_Unit Price.png" alt="Distribution — "dbo_D_Item"__hist_Unit Price.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Distribution — "dbo_D_Item"__hist_Unit Cost.png</h3>
+      <img src="images/"dbo_D_Item"__hist_Unit Cost.png" alt="Distribution — "dbo_D_Item"__hist_Unit Cost.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Time series — "dbo_D_Item"__timeseries_Origin Date.png</h3>
+      <img src="images/"dbo_D_Item"__timeseries_Origin Date.png" alt="Time series — "dbo_D_Item"__timeseries_Origin Date.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Scatter — "dbo_D_Item"__scatter_Item Key_vs_Buyer Key.png</h3>
+      <img src="images/"dbo_D_Item"__scatter_Item Key_vs_Buyer Key.png" alt="Scatter — "dbo_D_Item"__scatter_Item Key_vs_Buyer Key.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Correlation heatmap — "dbo_D_Sales_Organization"</h3>
+      <img src="images/"dbo_D_Sales_Organization"__heatmap.png" alt="Correlation heatmap — "dbo_D_Sales_Organization""/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Distribution — "dbo_D_Sales_Organization"__hist_Salesperson Code.png</h3>
+      <img src="images/"dbo_D_Sales_Organization"__hist_Salesperson Code.png" alt="Distribution — "dbo_D_Sales_Organization"__hist_Salesperson Code.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Distribution — "dbo_D_Sales_Organization"__hist_Sales Organization Key.png</h3>
+      <img src="images/"dbo_D_Sales_Organization"__hist_Sales Organization Key.png" alt="Distribution — "dbo_D_Sales_Organization"__hist_Sales Organization Key.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Scatter — "dbo_D_Sales_Organization"__scatter_Sales Organization Key_vs_Sales Activity Flag.png</h3>
+      <img src="images/"dbo_D_Sales_Organization"__scatter_Sales Organization Key_vs_Sales Activity Flag.png" alt="Scatter — "dbo_D_Sales_Organization"__scatter_Sales Organization Key_vs_Sales Activity Flag.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Correlation heatmap — "dbo_F_AR_Detail"</h3>
+      <img src="images/"dbo_F_AR_Detail"__heatmap.png" alt="Correlation heatmap — "dbo_F_AR_Detail""/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Distribution — "dbo_F_AR_Detail"__hist_AR Header Id.png</h3>
+      <img src="images/"dbo_F_AR_Detail"__hist_AR Header Id.png" alt="Distribution — "dbo_F_AR_Detail"__hist_AR Header Id.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Distribution — "dbo_F_AR_Detail"__hist_AR Detail Id.png</h3>
+      <img src="images/"dbo_F_AR_Detail"__hist_AR Detail Id.png" alt="Distribution — "dbo_F_AR_Detail"__hist_AR Detail Id.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Time series — "dbo_F_AR_Detail"__timeseries_Txn Date.png</h3>
+      <img src="images/"dbo_F_AR_Detail"__timeseries_Txn Date.png" alt="Time series — "dbo_F_AR_Detail"__timeseries_Txn Date.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Time series — "dbo_F_AR_Detail"__timeseries_Posting Date.png</h3>
+      <img src="images/"dbo_F_AR_Detail"__timeseries_Posting Date.png" alt="Time series — "dbo_F_AR_Detail"__timeseries_Posting Date.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Scatter — "dbo_F_AR_Detail"__scatter_AR Detail Key_vs_Record Type.png</h3>
+      <img src="images/"dbo_F_AR_Detail"__scatter_AR Detail Key_vs_Record Type.png" alt="Scatter — "dbo_F_AR_Detail"__scatter_AR Detail Key_vs_Record Type.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Correlation heatmap — "dbo_F_Sales_Order"</h3>
+      <img src="images/"dbo_F_Sales_Order"__heatmap.png" alt="Correlation heatmap — "dbo_F_Sales_Order""/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Distribution — "dbo_F_Sales_Order"__hist_Sales Order Key.png</h3>
+      <img src="images/"dbo_F_Sales_Order"__hist_Sales Order Key.png" alt="Distribution — "dbo_F_Sales_Order"__hist_Sales Order Key.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Distribution — "dbo_F_Sales_Order"__hist_Posting Date Key.png</h3>
+      <img src="images/"dbo_F_Sales_Order"__hist_Posting Date Key.png" alt="Distribution — "dbo_F_Sales_Order"__hist_Posting Date Key.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Time series — "dbo_F_Sales_Order"__timeseries_Order Date.png</h3>
+      <img src="images/"dbo_F_Sales_Order"__timeseries_Order Date.png" alt="Time series — "dbo_F_Sales_Order"__timeseries_Order Date.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Time series — "dbo_F_Sales_Order"__timeseries_Posting Date.png</h3>
+      <img src="images/"dbo_F_Sales_Order"__timeseries_Posting Date.png" alt="Time series — "dbo_F_Sales_Order"__timeseries_Posting Date.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Time series — "dbo_F_Sales_Order"__timeseries_Target Ship Date.png</h3>
+      <img src="images/"dbo_F_Sales_Order"__timeseries_Target Ship Date.png" alt="Time series — "dbo_F_Sales_Order"__timeseries_Target Ship Date.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Time series — "dbo_F_Sales_Order"__timeseries_Promised Ship Date.png</h3>
+      <img src="images/"dbo_F_Sales_Order"__timeseries_Promised Ship Date.png" alt="Time series — "dbo_F_Sales_Order"__timeseries_Promised Ship Date.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Scatter — "dbo_F_Sales_Order"__scatter_Sales Order Key_vs_Record Type.png</h3>
+      <img src="images/"dbo_F_Sales_Order"__scatter_Sales Order Key_vs_Record Type.png" alt="Scatter — "dbo_F_Sales_Order"__scatter_Sales Order Key_vs_Record Type.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Correlation heatmap — "dbo_F_Sales_Transaction"</h3>
+      <img src="images/"dbo_F_Sales_Transaction"__heatmap.png" alt="Correlation heatmap — "dbo_F_Sales_Transaction""/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Distribution — "dbo_F_Sales_Transaction"__hist_Sales Txn Key.png</h3>
+      <img src="images/"dbo_F_Sales_Transaction"__hist_Sales Txn Key.png" alt="Distribution — "dbo_F_Sales_Transaction"__hist_Sales Txn Key.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Distribution — "dbo_F_Sales_Transaction"__hist_Posting Date Key.png</h3>
+      <img src="images/"dbo_F_Sales_Transaction"__hist_Posting Date Key.png" alt="Distribution — "dbo_F_Sales_Transaction"__hist_Posting Date Key.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Time series — "dbo_F_Sales_Transaction"__timeseries_Txn Date.png</h3>
+      <img src="images/"dbo_F_Sales_Transaction"__timeseries_Txn Date.png" alt="Time series — "dbo_F_Sales_Transaction"__timeseries_Txn Date.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Time series — "dbo_F_Sales_Transaction"__timeseries_Posting Date.png</h3>
+      <img src="images/"dbo_F_Sales_Transaction"__timeseries_Posting Date.png" alt="Time series — "dbo_F_Sales_Transaction"__timeseries_Posting Date.png"/>
+    </div>
+  
+    <div class="table-block">
+      <h3>Scatter — "dbo_F_Sales_Transaction"__scatter_Sales Txn Key_vs_Record Type.png</h3>
+      <img src="images/"dbo_F_Sales_Transaction"__scatter_Sales Txn Key_vs_Record Type.png" alt="Scatter — "dbo_F_Sales_Transaction"__scatter_Sales Txn Key_vs_Record Type.png"/>
+    </div>
+  
+
+  <h2>PER-TABLE DETAILS</h2>
+  
+    <div class="table-block">
+      <h3>Table: dbo_D_Customer (2632 rows)</h3>
+      <p><strong>Columns:</strong> Customer Key, Company Code, Source Code, Customer Number, Bill-to Customer Key, Customer Category Hrchy Key, Customer Geography Hrchy Key, Default Customer Ship-to Key, Sales Organization Key, Customer Name, Customer Status, Origin Date, Customer Address 1, Customer Address 2, Customer Address 3, Customer City, Customer State/Prov Code, Customer State/Prov, Customer Postal Code, Customer Country Code, Customer Country, Bill-to Customer Number, Customer Type Code, Customer Type Desc, Customer Category Hrchy Code, Customer Geography Hrchy Code, Market Code, Market Desc, Industry Code, Industry Desc, Salesperson Code, Salesperson Name, Responsibility Code, Responsibility Name, Sales Territory Code, Sales Territory, Payment Terms Code, Payment Terms, Payment Terms Group, Price Group Code, Price Group, Discount Group Code, Discount Group, Business Posting Code, Business Posting Desc, Customer Posting Desc, Credit Status, Credit Limit Amount, Attribute 1 Code, Attribute 1 Name, Attribute 2 Code, Attribute 2 Name, Attribute 3 Code, Attribute 3 Name, Attribute 4 Code, Attribute 4 Name, Attribute 5 Code, Attribute 5 Name, Loyalty Status, Year Acquired, High Volume Customer Count, Recency Band, Recency Band Sort, Frequency Band, Frequency Band Sort, Monetary Band, Monetary Band Sort, Relationship Length Band, Relationship Length Band Sort, Sales Activity Flag, Deleted Flag, Customer Loyalty Rule Key, Source Log Key</p>
+      <p><strong>Null counts (top 10):</strong></p>
+      <pre>Customer Key: 0
+Company Code: 1
+Source Code: 1
+Customer Number: 1
+Bill-to Customer Key: 0
+Customer Category Hrchy Key: 0
+Customer Geography Hrchy Key: 0
+Default Customer Ship-to Key: 0
+Sales Organization Key: 0
+Customer Name: 1
+Customer Status: 2632
+Origin Date: 2632
+Customer Address 1: 1
+Customer Address 2: 2632
+Customer Address 3: 2632
+Customer City: 1
+Customer State/Prov Code: 13
+Customer State/Prov: 1
+Customer Postal Code: 871
+Customer Country Code: 1</pre>
+      <p><strong>Top values (sample):</strong></p>
+      <pre>Company Code: [('US', 1371), ('MX', 870), ('CA', 390), (None, 1)]
+Source Code: [('Demo', 2631), (None, 1)]
+Customer Name: [('Guy Bicycle Sales', 1), (None, 1), ('Noel Bike Mart', 1), ('Whitfield Sporting Goods', 1), ('Ayala Bikes', 1)]
+Customer Status: [(None, 2632)]
+Origin Date: [(None, 2632)]
+Customer Address 1: [('5262 Summit Street', 1), (None, 1), ('2546 Bury Passage', 1), ('2000 Hill Boulevard', 1), ('6460 Buckingham Drive', 1)]
+Customer Address 2: [(None, 2632)]
+Customer Address 3: [(None, 2632)]
+Customer City: [('Mexico City', 59), ('Tapachula', 21), ('Puebla City', 21), ('Tuxtla Gutiérrez', 19), ('Tehuacán', 19)]
+Customer State/Prov Code: [('BC', 95), ('ON', 70), ('CA', 70), ('TX', 70), ('MI', 60)]</pre>
+    </div>
+  
+    <div class="table-block">
+      <h3>Table: dbo_D_Customer_Category_Hierarchy (19 rows)</h3>
+      <p><strong>Columns:</strong> Customer Category Hrchy Key, Company Code, Source Code, Customer Category Hrchy Code, Customer Category Hrchy L1 Code, Customer Category Hrchy L1 Name, Customer Category Hrchy L2 Code, Customer Category Hrchy L2 Name, Customer Category Hrchy L3 Code, Customer Category Hrchy L3 Name, Customer Category Hrchy L4 Code, Customer Category Hrchy L4 Name, Customer Category Hrchy L5 Code, Customer Category Hrchy L5 Name, Deleted Flag, Source Log Key</p>
+      <p><strong>Null counts (top 10):</strong></p>
+      <pre>Customer Category Hrchy Key: 0
+Company Code: 1
+Source Code: 1
+Customer Category Hrchy Code: 1
+Customer Category Hrchy L1 Code: 1
+Customer Category Hrchy L1 Name: 1
+Customer Category Hrchy L2 Code: 19
+Customer Category Hrchy L2 Name: 19
+Customer Category Hrchy L3 Code: 19
+Customer Category Hrchy L3 Name: 19
+Customer Category Hrchy L4 Code: 19
+Customer Category Hrchy L4 Name: 19
+Customer Category Hrchy L5 Code: 19
+Customer Category Hrchy L5 Name: 19
+Deleted Flag: 0
+Source Log Key: 0</pre>
+      <p><strong>Top values (sample):</strong></p>
+      <pre>Company Code: [('CA', 6), ('MX', 6), ('US', 6), (None, 1)]
+Source Code: [('Demo', 18), (None, 1)]
+Customer Category Hrchy L1 Name: [('Specialty Bike Shops', 3), ('General Sports Shops', 3), ('Department Stores', 3), ('Wholesalers', 3), ('Clubs & Resorts', 3)]
+Customer Category Hrchy L2 Code: [(None, 19)]
+Customer Category Hrchy L2 Name: [(None, 19)]
+Customer Category Hrchy L3 Code: [(None, 19)]
+Customer Category Hrchy L3 Name: [(None, 19)]
+Customer Category Hrchy L4 Code: [(None, 19)]
+Customer Category Hrchy L4 Name: [(None, 19)]
+Customer Category Hrchy L5 Code: [(None, 19)]</pre>
+    </div>
+  
+    <div class="table-block">
+      <h3>Table: dbo_D_Customer_Geography_Hierarchy (99 rows)</h3>
+      <p><strong>Columns:</strong> Customer Geography Hrchy Key, Company Code, Source Code, Customer Geography Hrchy Code, Customer Geography Hrchy L1 Code, Customer Geography Hrchy L1 Name, Customer Geography Hrchy L2 Code, Customer Geography Hrchy L2 Name, Customer Geography Hrchy L3 Code, Customer Geography Hrchy L3 Name, Customer Geography Hrchy L4 Code, Customer Geography Hrchy L4 Name, Customer Geography Hrchy L5 Code, Customer Geography Hrchy L5 Name, Deleted Flag, Source Log Key</p>
+      <p><strong>Null counts (top 10):</strong></p>
+      <pre>Customer Geography Hrchy Key: 0
+Company Code: 1
+Source Code: 1
+Customer Geography Hrchy Code: 1
+Customer Geography Hrchy L1 Code: 1
+Customer Geography Hrchy L1 Name: 1
+Customer Geography Hrchy L2 Code: 1
+Customer Geography Hrchy L2 Name: 1
+Customer Geography Hrchy L3 Code: 1
+Customer Geography Hrchy L3 Name: 1
+Customer Geography Hrchy L4 Code: 99
+Customer Geography Hrchy L4 Name: 99
+Customer Geography Hrchy L5 Code: 99
+Customer Geography Hrchy L5 Name: 99
+Deleted Flag: 0
+Source Log Key: 0</pre>
+      <p><strong>Top values (sample):</strong></p>
+      <pre>Company Code: [('US', 53), ('MX', 32), ('CA', 13), (None, 1)]
+Source Code: [('Demo', 98), (None, 1)]
+Customer Geography Hrchy Code: [('Wyoming', 1), (None, 1), ('Alberta', 1), ('Oregon', 1), ('Pennsylvania', 1)]
+Customer Geography Hrchy L1 Code: [('United States', 53), ('Mexico', 32), ('Canada', 13), (None, 1)]
+Customer Geography Hrchy L1 Name: [('United States', 53), ('Mexico', 32), ('Canada', 13), (None, 1)]
+Customer Geography Hrchy L2 Code: [('Southeast', 14), ('Central', 13), ('Midwest', 12), ('Northeast', 12), ('West', 11)]
+Customer Geography Hrchy L2 Name: [('Southeast', 14), ('Central', 13), ('Midwest', 12), ('Northeast', 12), ('West', 11)]
+Customer Geography Hrchy L3 Code: [('Wyoming', 1), (None, 1), ('Alberta', 1), ('Oregon', 1), ('Pennsylvania', 1)]
+Customer Geography Hrchy L3 Name: [('Wyoming', 1), (None, 1), ('Alberta', 1), ('Oregon', 1), ('Pennsylvania', 1)]
+Customer Geography Hrchy L4 Code: [(None, 99)]</pre>
+    </div>
+  
+    <div class="table-block">
+      <h3>Table: dbo_D_Item (463 rows)</h3>
+      <p><strong>Columns:</strong> Item Key, Company Code, Source Code, Item Type, Item Number, Buyer Key, Item Category Hrchy Key, Manufacturer Key, Purchaser Key, Vendor Key, Item Desc, Item Status, Origin Date, Item Type Code, Item Type Desc, Item Category Hrchy Code, Item Category Code, Item Category Desc, Item Subcategory Code, Item Subcategory Desc, Vendor Number, Vendor Item Number, Manufacturer Number, Purchaser Code, Buyer Code, Planner Code, Planner Name, ABC Code, Inventory Posting Code, Inventory Posting Desc, Discount Code, Discount Desc, Unit of Measure, Purch Unit of Measure, Sales Unit of Measure, Unit Price, Unit Cost, Standard Unit Cost, Last Unit Cost, Gross Weight, Replenishment Method, Reorder Point, Reorder Quantity, Safety Stock Quantity, Purch Lead Time, Mfg Lead Time, New Item Count, Attribute 1 Code, Attribute 1 Name, Attribute 2 Code, Attribute 2 Name, Attribute 3 Code, Attribute 3 Name, Attribute 4 Code, Attribute 4 Name, Attribute 5 Code, Attribute 5 Name, Purch Activity Flag, Inv Activity Flag, Sales Activity Flag, Deleted Flag, Source Log Key</p>
+      <p><strong>Null counts (top 10):</strong></p>
+      <pre>Item Key: 0
+Company Code: 1
+Source Code: 1
+Item Type: 1
+Item Number: 1
+Buyer Key: 0
+Item Category Hrchy Key: 0
+Manufacturer Key: 0
+Purchaser Key: 0
+Vendor Key: 0
+Item Desc: 1
+Item Status: 463
+Origin Date: 0
+Item Type Code: 1
+Item Type Desc: 463
+Item Category Hrchy Code: 1
+Item Category Code: 1
+Item Category Desc: 1
+Item Subcategory Code: 1
+Item Subcategory Desc: 1</pre>
+      <p><strong>Top values (sample):</strong></p>
+      <pre>Company Code: [('CA', 154), ('MX', 154), ('US', 154), (None, 1)]
+Source Code: [('Demo', 462), (None, 1)]
+Item Type: [('Item', 462), (None, 1)]
+Item Number: [('T-1406-2XL', 3), ('T-1405-XL', 3), ('T-1104-L', 3), ('T-1105-XL', 3), ('T-1201-XS', 3)]
+Item Desc: [('Touring 1400 2XL', 3), ('Touring 1400 XL', 3), ('Touring 1100 L', 3), ('Touring 1100 XL', 3), ('Touring 1200 XS', 3)]
+Item Status: [(None, 463)]
+Origin Date: [('2017-01-01', 388), ('2021-01-01', 39), ('2020-01-01', 36)]
+Item Type Code: [('FG', 462), (None, 1)]
+Item Type Desc: [(None, 463)]
+Item Category Hrchy Code: [('Road 2000', 18), ('Road 3000', 18), ('Road 4000', 18), ('Mountain 1000', 18), ('Mountain 2000', 18)]</pre>
+    </div>
+  
+    <div class="table-block">
+      <h3>Table: dbo_D_Sales_Organization (21 rows)</h3>
+      <p><strong>Columns:</strong> Sales Organization Key, Company Code, Source Code, Salesperson Code, Salesperson Name, Sales Org Hrchy L1 Name, Sales Org Hrchy L2 Name, Sales Org Hrchy L3 Name, Email Address, Sales Manager Code, Sales Manager Name, Sales Activity Flag, Deleted Flag, Source Log Key</p>
+      <p><strong>Null counts (top 10):</strong></p>
+      <pre>Sales Organization Key: 0
+Company Code: 1
+Source Code: 1
+Salesperson Code: 1
+Salesperson Name: 1
+Sales Org Hrchy L1 Name: 1
+Sales Org Hrchy L2 Name: 1
+Sales Org Hrchy L3 Name: 21
+Email Address: 21
+Sales Manager Code: 21
+Sales Manager Name: 21
+Sales Activity Flag: 0
+Deleted Flag: 0
+Source Log Key: 0</pre>
+      <p><strong>Top values (sample):</strong></p>
+      <pre>Company Code: [('US', 9), ('CA', 6), ('MX', 5), (None, 1)]
+Source Code: [('Demo', 20), (None, 1)]
+Salesperson Name: [(None, 1), ('Emily White', 1), ('George Harman', 1), ('Richard Bucket', 1), ('Matt Willheim', 1)]
+Sales Org Hrchy L1 Name: [('United States', 9), ('Canada', 6), ('Mexico', 5), (None, 1)]
+Sales Org Hrchy L2 Name: [('West', 3), ('Northern', 2), ('Southeast', 2), ('Midwest', 2), ('Ontario', 1)]
+Sales Org Hrchy L3 Name: [(None, 21)]
+Email Address: [(None, 21)]
+Sales Manager Code: [(None, 21)]
+Sales Manager Name: [(None, 21)]</pre>
+    </div>
+  
+    <div class="table-block">
+      <h3>Table: dbo_F_AR_Detail (520089 rows)</h3>
+      <p><strong>Columns:</strong> AR Detail Key, Company Code, Source Code, Record Type, AR Detail Id, AR Header Key, Business Unit Key, Company Key, Currency Key, Customer Key, Customer Category Hrchy Key, Customer Geography Hrchy Key, Division Key, Facility Key, Posting Date Key, Sales Organization Key, Txn Date Key, Txn Sales Organization Key, AR Header Id, Txn Date, Posting Date, Document Source, Document Type, Document Number, Transaction Type, Txn Amount, Txn Amount (TCY), Debit Amount, Credit Amount, Age Band Days, Age Band, Age Band Sort, Deleted Flag, Source Log Key, Analytics Log Key, Dimension 01 Key, Dimension 02 Key, Dimension 03 Key, Dimension 04 Key, Dimension 05 Key, Dimension 06 Key, Dimension 07 Key, Dimension 08 Key, Dimension 09 Key, Dimension 10 Key</p>
+      <p><strong>Null counts (top 10):</strong></p>
+      <pre>AR Detail Key: 0
+Company Code: 0
+Source Code: 0
+Record Type: 0
+AR Detail Id: 0
+AR Header Key: 0
+Business Unit Key: 0
+Company Key: 0
+Currency Key: 0
+Customer Key: 0
+Customer Category Hrchy Key: 0
+Customer Geography Hrchy Key: 0
+Division Key: 0
+Facility Key: 0
+Posting Date Key: 0
+Sales Organization Key: 0
+Txn Date Key: 0
+Txn Sales Organization Key: 0
+AR Header Id: 0
+Txn Date: 0</pre>
+      <p><strong>Top values (sample):</strong></p>
+      <pre>Company Code: [('US', 348791), ('CA', 90971), ('MX', 80327)]
+Source Code: [('Demo', 520089)]
+Txn Date: [('2020-10-05', 2270), ('2020-11-04', 2015), ('2019-06-30', 1990), ('2020-10-22', 1793), ('2020-04-06', 1767)]
+Posting Date: [('2020-10-05', 2270), ('2020-11-04', 2015), ('2019-06-30', 1990), ('2020-10-22', 1793), ('2020-04-06', 1767)]
+Document Source: [('SALES', 261844), ('BANKDEP', 175015), ('SALESAPPL', 39724), ('CASHRECJNL', 32834), (None, 9980)]
+Document Type: [('Invoice', 520089)]
+Document Number: [('WRITE OFF', 1625), ('V/MC41786', 346), ('V/MC41121', 320), ('V/MC36909', 285), ('100705259SB', 264)]
+Transaction Type: [('Invoice', 275949), ('Payment', 222947), ('Credit Memo', 12198), (None, 8995)]
+Age Band: [('Current', 336389), ('31 to 60', 49085), ('Up to 15', 44919), ('16 to 30', 35211), ('61 to 90', 29323)]</pre>
+    </div>
+  
+    <div class="table-block">
+      <h3>Table: dbo_F_Sales_Goal (26350 rows)</h3>
+      <p><strong>Columns:</strong> Sales Goal Key, Company Code, Source Code, Dataset, Sales Goal Id, Business Unit Key, Company Key, Currency Key, Customer Key, Customer Category Hrchy Key, Customer Geography Hrchy Key, Division Key, Facility Key, Item Key, Item Category Hrchy Key, Goal Date Key, Sales Organization Key, Division Code, Business Unit Code, Facility Code, Salesperson Code, Customer Category Hrchy Code, Customer Number, Item Category Hrchy Code, Line Type, Item Number, Goal Date, Sales Goal Quantity, Sales Goal Amount, Profit Goal Amount, Deleted Flag, Source Log Key</p>
+      <p><strong>Null counts (top 10):</strong></p>
+      <pre>Sales Goal Key: 0
+Company Code: 0
+Source Code: 0
+Dataset: 0
+Sales Goal Id: 0
+Business Unit Key: 0
+Company Key: 0
+Currency Key: 0
+Customer Key: 0
+Customer Category Hrchy Key: 0
+Customer Geography Hrchy Key: 0
+Division Key: 0
+Facility Key: 0
+Item Key: 0
+Item Category Hrchy Key: 0
+Goal Date Key: 0
+Sales Organization Key: 0
+Division Code: 0
+Business Unit Code: 1332
+Facility Code: 26350</pre>
+      <p><strong>Top values (sample):</strong></p>
+      <pre>Company Code: [('US', 15173), ('CA', 6850), ('MX', 4327)]
+Source Code: [('Demo', 26350)]
+Dataset: [('Goal', 25018), ('New Product', 1332)]
+Division Code: [('WHLS', 26350)]
+Business Unit Code: [('RIC', 4229), ('SEA', 4171), ('MXC', 3883), ('DAL', 3748), ('TOR', 3701)]
+Facility Code: [(None, 26350)]
+Customer Number: [(None, 26350)]
+Item Category Hrchy Code: [('Road 2000', 1331), ('Road 3000', 1276), ('Road 1000', 1247), ('Indoor Cycling Bike', 1181), ('Mountain 4000', 1077)]
+Line Type: [(None, 25018), ('Item', 1332)]
+Item Number: [(None, 25018), ('S-602-S', 72), ('S-603-M', 72), ('S-604-L', 72), ('T-1404-L', 72)]</pre>
+    </div>
+  
+    <div class="table-block">
+      <h3>Table: dbo_F_Sales_Order (80226 rows)</h3>
+      <p><strong>Columns:</strong> Sales Order Key, Company Code, Source Code, Record Type, Sales Order Document, Business Unit Key, Company Key, Currency Key, Customer Key, Customer Category Hrchy Key, Customer Geography Hrchy Key, Customer Ship-to Key, Division Key, Facility Key, Item Key, Item Category Hrchy Key, Item Variant Key, Location Key, Order Date Key, Posting Date Key, Sales Event Key, Sales Order Header Key, Sales Organization Key, Service Item Key, Txn Sales Organization Key, Warehouse Key, Sales Order Type, Sales Order Number, Sales Order Line Number, Sales Order Header Document, Order Date, Posting Date, Posting Time, Warehouse Code, Location Code, Line Type, Item Number, Revision Code, Item Variant Code, Service Item Number, Dimension Set Id, Order Status, Customer Posting Group, Business Posting Group Code, Business Posting Group, Product Posting Group Code, Product Posting Group, Target Ship Date, Requested Ship Date, Promised Ship Date, Sales Event Code, Unit of Measure, Order Quantity, Order Amount, Order Amount (TCY), Return Quantity, Return Amount, Return Amount (TCY), Net Order Quantity, Net Order Amount, Net Order Amount (TCY), Cost Amount, Gross Profit Amount, Discount Amount, Discount Amount (TCY), Discount Reason Code, Discount Reason, Number Order Lines, Number Return Lines, Deleted Flag, Excluded Flag, Source Log Key, Analytics Log Key, Dimension 01 Key, Dimension 02 Key, Dimension 03 Key, Dimension 04 Key, Dimension 05 Key, Dimension 06 Key, Dimension 07 Key, Dimension 08 Key, Dimension 09 Key, Dimension 10 Key</p>
+      <p><strong>Null counts (top 10):</strong></p>
+      <pre>Sales Order Key: 0
+Company Code: 0
+Source Code: 0
+Record Type: 0
+Sales Order Document: 0
+Business Unit Key: 0
+Company Key: 0
+Currency Key: 0
+Customer Key: 0
+Customer Category Hrchy Key: 0
+Customer Geography Hrchy Key: 0
+Customer Ship-to Key: 0
+Division Key: 0
+Facility Key: 0
+Item Key: 0
+Item Category Hrchy Key: 0
+Item Variant Key: 0
+Location Key: 0
+Order Date Key: 0
+Posting Date Key: 0</pre>
+      <p><strong>Top values (sample):</strong></p>
+      <pre>Company Code: [('US', 49086), ('CA', 19552), ('MX', 11588)]
+Source Code: [('Demo', 80226)]
+Sales Order Document: [('SO003693.0002', 1), ('SO009252.0001', 1), ('SO003695.0003', 1), ('SO003666.0004', 1), ('SO003666.0003', 1)]
+Sales Order Type: [('Sales Order', 80226)]
+Sales Order Number: [('SO003717', 4), ('SO009223', 4), ('SO003455', 4), ('SO009252', 4), ('SO009444', 4)]
+Sales Order Header Document: [('SO003717', 4), ('SO009223', 4), ('SO003455', 4), ('SO009252', 4), ('SO009444', 4)]
+Order Date: [('2018-10-25', 93), ('2017-08-11', 92), ('2017-08-16', 91), ('2017-04-13', 89), ('2021-07-13', 88)]
+Posting Date: [('2018-10-25', 93), ('2017-08-11', 92), ('2017-08-16', 91), ('2017-04-13', 89), ('2021-07-13', 88)]
+Posting Time: [(None, 80226)]
+Warehouse Code: [(None, 80226)]</pre>
+    </div>
+  
+    <div class="table-block">
+      <h3>Table: dbo_F_Sales_Pipeline_Snapshot (31476 rows)</h3>
+      <p><strong>Columns:</strong> Pipeline Snapshot Key, Business Unit Key, Company Key, Customer Key, Customer Category Hrchy Key, Customer Geography Hrchy Key, Division Key, Facility Key, Sales Organization Key, Snapshot Date Key, Snapshot Date, Warehouse Key, Expiration Status, Class Band, Class Band Sort, Stage Band, Stage Band Sort, Priority Band, Priority Band Sort, Size Band, Size Band Sort, Probability Band, Probability Band Sort, Expected Close Band, Expected Close Band Sort, Expected Delivery Band, Expected Delivery Band Sort, Quote Quantity, Quote Amount, Gross Profit Amount, Discount Amount, Number Quote Lines, Deleted Flag, Analytics Log Key</p>
+      <p><strong>Null counts (top 10):</strong></p>
+      <pre>Pipeline Snapshot Key: 0
+Business Unit Key: 0
+Company Key: 0
+Customer Key: 0
+Customer Category Hrchy Key: 0
+Customer Geography Hrchy Key: 0
+Division Key: 0
+Facility Key: 0
+Sales Organization Key: 0
+Snapshot Date Key: 0
+Snapshot Date: 0
+Warehouse Key: 0
+Expiration Status: 0
+Class Band: 0
+Class Band Sort: 31476
+Stage Band: 0
+Stage Band Sort: 0
+Priority Band: 0
+Priority Band Sort: 0
+Size Band: 0</pre>
+      <p><strong>Top values (sample):</strong></p>
+      <pre>Snapshot Date: [('2021-03-20', 722), ('2021-03-27', 678), ('2021-04-24', 668), ('2020-12-19', 668), ('2020-07-25', 666)]
+Expiration Status: [('Current', 30636), ('Expired', 840)]
+Class Band: [('Pipeline', 16188), ('Upside', 9166), ('Commit', 6122)]
+Class Band Sort: [(None, 31476)]
+Stage Band: [('Meeting', 14590), ('Proposal', 8854), ('Qualification', 6394), ('Closing', 1638)]
+Priority Band: [('B Priority', 16078), ('C Priority', 9072), ('A Priority', 6326)]
+Size Band: [('Large', 9978), ('Small', 9742), ('Medium', 9334), ('Huge', 2422)]
+Probability Band: [('50/50', 15642), ('High', 9308), ('Low', 6526)]
+Expected Close Band: [('w/in 45 Days', 11746), ('w/in 30 Days', 9992), ('w/in 60 Days', 6268), ('w/in 15 Days', 3470)]
+Expected Delivery Band: [(None, 31476)]</pre>
+    </div>
+  
+    <div class="table-block">
+      <h3>Table: dbo_F_Sales_Transaction (81423 rows)</h3>
+      <p><strong>Columns:</strong> Sales Txn Key, Company Code, Source Code, Record Type, Sales Txn Document, Business Unit Key, Company Key, Currency Key, Customer Key, Customer Category Hrchy Key, Customer Geography Hrchy Key, Customer Ship-to Key, Division Key, Facility Key, Item Key, Item Category Hrchy Key, Item Variant Key, Location Key, Posting Date Key, Sales Event Key, Sales Txn Header Key, Sales Organization Key, Service Item Key, Txn Date Key, Txn Sales Organization Key, Warehouse Key, Sales Txn Type, Sales Txn Number, Sales Txn Line Number, Sales Txn Header Document, Txn Date, Posting Date, Posting Time, Warehouse Code, Location Code, Business Posting Group Code, Business Posting Group, Product Posting Group Code, Product Posting Group, Line Type, Item Number, Revision Code, Item Variant Code, Service Item Number, Dimension Set Id, Sales Event Code, Unit of Measure, Sales Quantity, Sales Amount, Sales Amount (TCY), Sales Order Document, Credit Quantity, Credit Amount, Credit Amount (TCY), Return Quantity, Return Amount, Return Amount (TCY), Return Reason Code, Return Reason, Return Order Document, Net Sales Quantity, Net Sales Amount, Net Sales Amount (TCY), Cost Amount, Gross Profit Amount, Discount Amount, Discount Amount (TCY), Discount Reason Code, Discount Reason, Other Charges Amount, Other Charges Amount (TCY), Tax 1 Code, Tax 1 Amount, Tax 2 Code, Tax 2 Amount, Number Sales Lines, Number Credit Lines, Number Return Lines, Number Discount Lines, Deleted Flag, Excluded Flag, Source Log Key, Dimension 01 Key, Dimension 02 Key, Dimension 03 Key, Dimension 04 Key, Dimension 05 Key, Dimension 06 Key, Dimension 07 Key, Dimension 08 Key, Dimension 09 Key, Dimension 10 Key, gpb Sales Amount, gpb Return Amount, gpb Net Sales Amount, gpb Cost Amount, gpb Gross Profit Amount, gpb Discount Amount, gpb Discount%, gpb Sales Quantity, gpb Net Sales Quantity</p>
+      <p><strong>Null counts (top 10):</strong></p>
+      <pre>Sales Txn Key: 0
+Company Code: 0
+Source Code: 0
+Record Type: 0
+Sales Txn Document: 0
+Business Unit Key: 0
+Company Key: 0
+Currency Key: 0
+Customer Key: 0
+Customer Category Hrchy Key: 0
+Customer Geography Hrchy Key: 0
+Customer Ship-to Key: 0
+Division Key: 0
+Facility Key: 0
+Item Key: 0
+Item Category Hrchy Key: 0
+Item Variant Key: 0
+Location Key: 0
+Posting Date Key: 0
+Sales Event Key: 0</pre>
+      <p><strong>Top values (sample):</strong></p>
+      <pre>Company Code: [('US', 49712), ('CA', 19914), ('MX', 11797)]
+Source Code: [('Demo', 81423)]
+Sales Txn Document: [('IN029657.0001', 1), ('IN018517.0004', 1), ('IN018442.0002', 1), ('IN018359.0001', 1), ('IN018640.0002', 1)]
+Sales Txn Type: [('Sales Invoice', 79202), ('Sales Return', 2221)]
+Sales Txn Number: [('IN029608', 4), ('IN018517', 4), ('IN018442', 4), ('IN029821', 4), ('IN028342', 4)]
+Sales Txn Header Document: [('IN029608', 4), ('IN018517', 4), ('IN018442', 4), ('IN029821', 4), ('IN028342', 4)]
+Txn Date: [('2017-09-01', 94), ('2018-11-15', 93), ('2021-08-03', 92), ('2017-09-06', 92), ('2019-01-07', 90)]
+Posting Date: [('2017-09-01', 94), ('2018-11-15', 93), ('2021-08-03', 92), ('2017-09-06', 92), ('2019-01-07', 90)]
+Posting Time: [(None, 81423)]
+Warehouse Code: [(None, 81423)]</pre>
+    </div>
+  
+    <div class="table-block">
+      <h3>Table: "dbo_D_Customer" (2632 rows)</h3>
+      <p><strong>Columns:</strong> Customer Key, Company Code, Source Code, Customer Number, Bill-to Customer Key, Customer Category Hrchy Key, Customer Geography Hrchy Key, Default Customer Ship-to Key, Sales Organization Key, Customer Name, Customer Status, Origin Date, Customer Address 1, Customer Address 2, Customer Address 3, Customer City, Customer State/Prov Code, Customer State/Prov, Customer Postal Code, Customer Country Code, Customer Country, Bill-to Customer Number, Customer Type Code, Customer Type Desc, Customer Category Hrchy Code, Customer Geography Hrchy Code, Market Code, Market Desc, Industry Code, Industry Desc, Salesperson Code, Salesperson Name, Responsibility Code, Responsibility Name, Sales Territory Code, Sales Territory, Payment Terms Code, Payment Terms, Payment Terms Group, Price Group Code, Price Group, Discount Group Code, Discount Group, Business Posting Code, Business Posting Desc, Customer Posting Desc, Credit Status, Credit Limit Amount, Attribute 1 Code, Attribute 1 Name, Attribute 2 Code, Attribute 2 Name, Attribute 3 Code, Attribute 3 Name, Attribute 4 Code, Attribute 4 Name, Attribute 5 Code, Attribute 5 Name, Loyalty Status, Year Acquired, High Volume Customer Count, Recency Band, Recency Band Sort, Frequency Band, Frequency Band Sort, Monetary Band, Monetary Band Sort, Relationship Length Band, Relationship Length Band Sort, Sales Activity Flag, Deleted Flag, Customer Loyalty Rule Key, Source Log Key</p>
+      <p><strong>Null counts (top 10):</strong></p>
+      <pre>Customer Key: 0
+Company Code: 1
+Source Code: 1
+Customer Number: 1
+Bill-to Customer Key: 0
+Customer Category Hrchy Key: 0
+Customer Geography Hrchy Key: 0
+Default Customer Ship-to Key: 0
+Sales Organization Key: 0
+Customer Name: 1
+Customer Status: 2632
+Origin Date: 2632
+Customer Address 1: 1
+Customer Address 2: 2632
+Customer Address 3: 2632
+Customer City: 1
+Customer State/Prov Code: 13
+Customer State/Prov: 1
+Customer Postal Code: 871
+Customer Country Code: 1</pre>
+      <p><strong>Top values (sample):</strong></p>
+      <pre>Company Code: [('US', 1371), ('MX', 870), ('CA', 390), (None, 1)]
+Source Code: [('Demo', 2631), (None, 1)]
+Customer Name: [('Guy Bicycle Sales', 1), (None, 1), ('Noel Bike Mart', 1), ('Whitfield Sporting Goods', 1), ('Ayala Bikes', 1)]
+Customer Status: [(None, 2632)]
+Origin Date: [(None, 2632)]
+Customer Address 1: [('5262 Summit Street', 1), (None, 1), ('2546 Bury Passage', 1), ('2000 Hill Boulevard', 1), ('6460 Buckingham Drive', 1)]
+Customer Address 2: [(None, 2632)]
+Customer Address 3: [(None, 2632)]
+Customer City: [('Mexico City', 59), ('Tapachula', 21), ('Puebla City', 21), ('Tuxtla Gutiérrez', 19), ('Tehuacán', 19)]
+Customer State/Prov Code: [('BC', 95), ('ON', 70), ('CA', 70), ('TX', 70), ('MI', 60)]</pre>
+    </div>
+  
+    <div class="table-block">
+      <h3>Table: "dbo_D_Customer_Category_Hierarchy" (19 rows)</h3>
+      <p><strong>Columns:</strong> Customer Category Hrchy Key, Company Code, Source Code, Customer Category Hrchy Code, Customer Category Hrchy L1 Code, Customer Category Hrchy L1 Name, Customer Category Hrchy L2 Code, Customer Category Hrchy L2 Name, Customer Category Hrchy L3 Code, Customer Category Hrchy L3 Name, Customer Category Hrchy L4 Code, Customer Category Hrchy L4 Name, Customer Category Hrchy L5 Code, Customer Category Hrchy L5 Name, Deleted Flag, Source Log Key</p>
+      <p><strong>Null counts (top 10):</strong></p>
+      <pre>Customer Category Hrchy Key: 0
+Company Code: 1
+Source Code: 1
+Customer Category Hrchy Code: 1
+Customer Category Hrchy L1 Code: 1
+Customer Category Hrchy L1 Name: 1
+Customer Category Hrchy L2 Code: 19
+Customer Category Hrchy L2 Name: 19
+Customer Category Hrchy L3 Code: 19
+Customer Category Hrchy L3 Name: 19
+Customer Category Hrchy L4 Code: 19
+Customer Category Hrchy L4 Name: 19
+Customer Category Hrchy L5 Code: 19
+Customer Category Hrchy L5 Name: 19
+Deleted Flag: 0
+Source Log Key: 0</pre>
+      <p><strong>Top values (sample):</strong></p>
+      <pre>Company Code: [('CA', 6), ('MX', 6), ('US', 6), (None, 1)]
+Source Code: [('Demo', 18), (None, 1)]
+Customer Category Hrchy L1 Name: [('Specialty Bike Shops', 3), ('General Sports Shops', 3), ('Department Stores', 3), ('Wholesalers', 3), ('Clubs & Resorts', 3)]
+Customer Category Hrchy L2 Code: [(None, 19)]
+Customer Category Hrchy L2 Name: [(None, 19)]
+Customer Category Hrchy L3 Code: [(None, 19)]
+Customer Category Hrchy L3 Name: [(None, 19)]
+Customer Category Hrchy L4 Code: [(None, 19)]
+Customer Category Hrchy L4 Name: [(None, 19)]
+Customer Category Hrchy L5 Code: [(None, 19)]</pre>
+    </div>
+  
+    <div class="table-block">
+      <h3>Table: "dbo_D_Customer_Geography_Hierarchy" (99 rows)</h3>
+      <p><strong>Columns:</strong> Customer Geography Hrchy Key, Company Code, Source Code, Customer Geography Hrchy Code, Customer Geography Hrchy L1 Code, Customer Geography Hrchy L1 Name, Customer Geography Hrchy L2 Code, Customer Geography Hrchy L2 Name, Customer Geography Hrchy L3 Code, Customer Geography Hrchy L3 Name, Customer Geography Hrchy L4 Code, Customer Geography Hrchy L4 Name, Customer Geography Hrchy L5 Code, Customer Geography Hrchy L5 Name, Deleted Flag, Source Log Key</p>
+      <p><strong>Null counts (top 10):</strong></p>
+      <pre>Customer Geography Hrchy Key: 0
+Company Code: 1
+Source Code: 1
+Customer Geography Hrchy Code: 1
+Customer Geography Hrchy L1 Code: 1
+Customer Geography Hrchy L1 Name: 1
+Customer Geography Hrchy L2 Code: 1
+Customer Geography Hrchy L2 Name: 1
+Customer Geography Hrchy L3 Code: 1
+Customer Geography Hrchy L3 Name: 1
+Customer Geography Hrchy L4 Code: 99
+Customer Geography Hrchy L4 Name: 99
+Customer Geography Hrchy L5 Code: 99
+Customer Geography Hrchy L5 Name: 99
+Deleted Flag: 0
+Source Log Key: 0</pre>
+      <p><strong>Top values (sample):</strong></p>
+      <pre>Company Code: [('US', 53), ('MX', 32), ('CA', 13), (None, 1)]
+Source Code: [('Demo', 98), (None, 1)]
+Customer Geography Hrchy Code: [('Wyoming', 1), (None, 1), ('Alberta', 1), ('Oregon', 1), ('Pennsylvania', 1)]
+Customer Geography Hrchy L1 Code: [('United States', 53), ('Mexico', 32), ('Canada', 13), (None, 1)]
+Customer Geography Hrchy L1 Name: [('United States', 53), ('Mexico', 32), ('Canada', 13), (None, 1)]
+Customer Geography Hrchy L2 Code: [('Southeast', 14), ('Central', 13), ('Midwest', 12), ('Northeast', 12), ('West', 11)]
+Customer Geography Hrchy L2 Name: [('Southeast', 14), ('Central', 13), ('Midwest', 12), ('Northeast', 12), ('West', 11)]
+Customer Geography Hrchy L3 Code: [('Wyoming', 1), (None, 1), ('Alberta', 1), ('Oregon', 1), ('Pennsylvania', 1)]
+Customer Geography Hrchy L3 Name: [('Wyoming', 1), (None, 1), ('Alberta', 1), ('Oregon', 1), ('Pennsylvania', 1)]
+Customer Geography Hrchy L4 Code: [(None, 99)]</pre>
+    </div>
+  
+    <div class="table-block">
+      <h3>Table: "dbo_D_Item" (463 rows)</h3>
+      <p><strong>Columns:</strong> Item Key, Company Code, Source Code, Item Type, Item Number, Buyer Key, Item Category Hrchy Key, Manufacturer Key, Purchaser Key, Vendor Key, Item Desc, Item Status, Origin Date, Item Type Code, Item Type Desc, Item Category Hrchy Code, Item Category Code, Item Category Desc, Item Subcategory Code, Item Subcategory Desc, Vendor Number, Vendor Item Number, Manufacturer Number, Purchaser Code, Buyer Code, Planner Code, Planner Name, ABC Code, Inventory Posting Code, Inventory Posting Desc, Discount Code, Discount Desc, Unit of Measure, Purch Unit of Measure, Sales Unit of Measure, Unit Price, Unit Cost, Standard Unit Cost, Last Unit Cost, Gross Weight, Replenishment Method, Reorder Point, Reorder Quantity, Safety Stock Quantity, Purch Lead Time, Mfg Lead Time, New Item Count, Attribute 1 Code, Attribute 1 Name, Attribute 2 Code, Attribute 2 Name, Attribute 3 Code, Attribute 3 Name, Attribute 4 Code, Attribute 4 Name, Attribute 5 Code, Attribute 5 Name, Purch Activity Flag, Inv Activity Flag, Sales Activity Flag, Deleted Flag, Source Log Key</p>
+      <p><strong>Null counts (top 10):</strong></p>
+      <pre>Item Key: 0
+Company Code: 1
+Source Code: 1
+Item Type: 1
+Item Number: 1
+Buyer Key: 0
+Item Category Hrchy Key: 0
+Manufacturer Key: 0
+Purchaser Key: 0
+Vendor Key: 0
+Item Desc: 1
+Item Status: 463
+Origin Date: 0
+Item Type Code: 1
+Item Type Desc: 463
+Item Category Hrchy Code: 1
+Item Category Code: 1
+Item Category Desc: 1
+Item Subcategory Code: 1
+Item Subcategory Desc: 1</pre>
+      <p><strong>Top values (sample):</strong></p>
+      <pre>Company Code: [('CA', 154), ('MX', 154), ('US', 154), (None, 1)]
+Source Code: [('Demo', 462), (None, 1)]
+Item Type: [('Item', 462), (None, 1)]
+Item Number: [('T-1406-2XL', 3), ('T-1405-XL', 3), ('T-1104-L', 3), ('T-1105-XL', 3), ('T-1201-XS', 3)]
+Item Desc: [('Touring 1400 2XL', 3), ('Touring 1400 XL', 3), ('Touring 1100 L', 3), ('Touring 1100 XL', 3), ('Touring 1200 XS', 3)]
+Item Status: [(None, 463)]
+Origin Date: [('2017-01-01', 388), ('2021-01-01', 39), ('2020-01-01', 36)]
+Item Type Code: [('FG', 462), (None, 1)]
+Item Type Desc: [(None, 463)]
+Item Category Hrchy Code: [('Road 2000', 18), ('Road 3000', 18), ('Road 4000', 18), ('Mountain 1000', 18), ('Mountain 2000', 18)]</pre>
+    </div>
+  
+    <div class="table-block">
+      <h3>Table: "dbo_D_Sales_Organization" (21 rows)</h3>
+      <p><strong>Columns:</strong> Sales Organization Key, Company Code, Source Code, Salesperson Code, Salesperson Name, Sales Org Hrchy L1 Name, Sales Org Hrchy L2 Name, Sales Org Hrchy L3 Name, Email Address, Sales Manager Code, Sales Manager Name, Sales Activity Flag, Deleted Flag, Source Log Key</p>
+      <p><strong>Null counts (top 10):</strong></p>
+      <pre>Sales Organization Key: 0
+Company Code: 1
+Source Code: 1
+Salesperson Code: 1
+Salesperson Name: 1
+Sales Org Hrchy L1 Name: 1
+Sales Org Hrchy L2 Name: 1
+Sales Org Hrchy L3 Name: 21
+Email Address: 21
+Sales Manager Code: 21
+Sales Manager Name: 21
+Sales Activity Flag: 0
+Deleted Flag: 0
+Source Log Key: 0</pre>
+      <p><strong>Top values (sample):</strong></p>
+      <pre>Company Code: [('US', 9), ('CA', 6), ('MX', 5), (None, 1)]
+Source Code: [('Demo', 20), (None, 1)]
+Salesperson Name: [(None, 1), ('Emily White', 1), ('George Harman', 1), ('Richard Bucket', 1), ('Matt Willheim', 1)]
+Sales Org Hrchy L1 Name: [('United States', 9), ('Canada', 6), ('Mexico', 5), (None, 1)]
+Sales Org Hrchy L2 Name: [('West', 3), ('Northern', 2), ('Southeast', 2), ('Midwest', 2), ('Ontario', 1)]
+Sales Org Hrchy L3 Name: [(None, 21)]
+Email Address: [(None, 21)]
+Sales Manager Code: [(None, 21)]
+Sales Manager Name: [(None, 21)]</pre>
+    </div>
+  
+    <div class="table-block">
+      <h3>Table: "dbo_F_AR_Detail" (520089 rows)</h3>
+      <p><strong>Columns:</strong> AR Detail Key, Company Code, Source Code, Record Type, AR Detail Id, AR Header Key, Business Unit Key, Company Key, Currency Key, Customer Key, Customer Category Hrchy Key, Customer Geography Hrchy Key, Division Key, Facility Key, Posting Date Key, Sales Organization Key, Txn Date Key, Txn Sales Organization Key, AR Header Id, Txn Date, Posting Date, Document Source, Document Type, Document Number, Transaction Type, Txn Amount, Txn Amount (TCY), Debit Amount, Credit Amount, Age Band Days, Age Band, Age Band Sort, Deleted Flag, Source Log Key, Analytics Log Key, Dimension 01 Key, Dimension 02 Key, Dimension 03 Key, Dimension 04 Key, Dimension 05 Key, Dimension 06 Key, Dimension 07 Key, Dimension 08 Key, Dimension 09 Key, Dimension 10 Key</p>
+      <p><strong>Null counts (top 10):</strong></p>
+      <pre>AR Detail Key: 0
+Company Code: 0
+Source Code: 0
+Record Type: 0
+AR Detail Id: 0
+AR Header Key: 0
+Business Unit Key: 0
+Company Key: 0
+Currency Key: 0
+Customer Key: 0
+Customer Category Hrchy Key: 0
+Customer Geography Hrchy Key: 0
+Division Key: 0
+Facility Key: 0
+Posting Date Key: 0
+Sales Organization Key: 0
+Txn Date Key: 0
+Txn Sales Organization Key: 0
+AR Header Id: 0
+Txn Date: 0</pre>
+      <p><strong>Top values (sample):</strong></p>
+      <pre>Company Code: [('US', 348791), ('CA', 90971), ('MX', 80327)]
+Source Code: [('Demo', 520089)]
+Txn Date: [('2020-10-05', 2270), ('2020-11-04', 2015), ('2019-06-30', 1990), ('2020-10-22', 1793), ('2020-04-06', 1767)]
+Posting Date: [('2020-10-05', 2270), ('2020-11-04', 2015), ('2019-06-30', 1990), ('2020-10-22', 1793), ('2020-04-06', 1767)]
+Document Source: [('SALES', 261844), ('BANKDEP', 175015), ('SALESAPPL', 39724), ('CASHRECJNL', 32834), (None, 9980)]
+Document Type: [('Invoice', 520089)]
+Document Number: [('WRITE OFF', 1625), ('V/MC41786', 346), ('V/MC41121', 320), ('V/MC36909', 285), ('100705259SB', 264)]
+Transaction Type: [('Invoice', 275949), ('Payment', 222947), ('Credit Memo', 12198), (None, 8995)]
+Age Band: [('Current', 336389), ('31 to 60', 49085), ('Up to 15', 44919), ('16 to 30', 35211), ('61 to 90', 29323)]</pre>
+    </div>
+  
+    <div class="table-block">
+      <h3>Table: "dbo_F_Sales_Order" (80226 rows)</h3>
+      <p><strong>Columns:</strong> Sales Order Key, Company Code, Source Code, Record Type, Sales Order Document, Business Unit Key, Company Key, Currency Key, Customer Key, Customer Category Hrchy Key, Customer Geography Hrchy Key, Customer Ship-to Key, Division Key, Facility Key, Item Key, Item Category Hrchy Key, Item Variant Key, Location Key, Order Date Key, Posting Date Key, Sales Event Key, Sales Order Header Key, Sales Organization Key, Service Item Key, Txn Sales Organization Key, Warehouse Key, Sales Order Type, Sales Order Number, Sales Order Line Number, Sales Order Header Document, Order Date, Posting Date, Posting Time, Warehouse Code, Location Code, Line Type, Item Number, Revision Code, Item Variant Code, Service Item Number, Dimension Set Id, Order Status, Customer Posting Group, Business Posting Group Code, Business Posting Group, Product Posting Group Code, Product Posting Group, Target Ship Date, Requested Ship Date, Promised Ship Date, Sales Event Code, Unit of Measure, Order Quantity, Order Amount, Order Amount (TCY), Return Quantity, Return Amount, Return Amount (TCY), Net Order Quantity, Net Order Amount, Net Order Amount (TCY), Cost Amount, Gross Profit Amount, Discount Amount, Discount Amount (TCY), Discount Reason Code, Discount Reason, Number Order Lines, Number Return Lines, Deleted Flag, Excluded Flag, Source Log Key, Analytics Log Key, Dimension 01 Key, Dimension 02 Key, Dimension 03 Key, Dimension 04 Key, Dimension 05 Key, Dimension 06 Key, Dimension 07 Key, Dimension 08 Key, Dimension 09 Key, Dimension 10 Key</p>
+      <p><strong>Null counts (top 10):</strong></p>
+      <pre>Sales Order Key: 0
+Company Code: 0
+Source Code: 0
+Record Type: 0
+Sales Order Document: 0
+Business Unit Key: 0
+Company Key: 0
+Currency Key: 0
+Customer Key: 0
+Customer Category Hrchy Key: 0
+Customer Geography Hrchy Key: 0
+Customer Ship-to Key: 0
+Division Key: 0
+Facility Key: 0
+Item Key: 0
+Item Category Hrchy Key: 0
+Item Variant Key: 0
+Location Key: 0
+Order Date Key: 0
+Posting Date Key: 0</pre>
+      <p><strong>Top values (sample):</strong></p>
+      <pre>Company Code: [('US', 49086), ('CA', 19552), ('MX', 11588)]
+Source Code: [('Demo', 80226)]
+Sales Order Document: [('SO003693.0002', 1), ('SO009252.0001', 1), ('SO003695.0003', 1), ('SO003666.0004', 1), ('SO003666.0003', 1)]
+Sales Order Type: [('Sales Order', 80226)]
+Sales Order Number: [('SO003717', 4), ('SO009223', 4), ('SO003455', 4), ('SO009252', 4), ('SO009444', 4)]
+Sales Order Header Document: [('SO003717', 4), ('SO009223', 4), ('SO003455', 4), ('SO009252', 4), ('SO009444', 4)]
+Order Date: [('2018-10-25', 93), ('2017-08-11', 92), ('2017-08-16', 91), ('2017-04-13', 89), ('2021-07-13', 88)]
+Posting Date: [('2018-10-25', 93), ('2017-08-11', 92), ('2017-08-16', 91), ('2017-04-13', 89), ('2021-07-13', 88)]
+Posting Time: [(None, 80226)]
+Warehouse Code: [(None, 80226)]</pre>
+    </div>
+  
+    <div class="table-block">
+      <h3>Table: "dbo_F_Sales_Transaction" (81423 rows)</h3>
+      <p><strong>Columns:</strong> Sales Txn Key, Company Code, Source Code, Record Type, Sales Txn Document, Business Unit Key, Company Key, Currency Key, Customer Key, Customer Category Hrchy Key, Customer Geography Hrchy Key, Customer Ship-to Key, Division Key, Facility Key, Item Key, Item Category Hrchy Key, Item Variant Key, Location Key, Posting Date Key, Sales Event Key, Sales Txn Header Key, Sales Organization Key, Service Item Key, Txn Date Key, Txn Sales Organization Key, Warehouse Key, Sales Txn Type, Sales Txn Number, Sales Txn Line Number, Sales Txn Header Document, Txn Date, Posting Date, Posting Time, Warehouse Code, Location Code, Business Posting Group Code, Business Posting Group, Product Posting Group Code, Product Posting Group, Line Type, Item Number, Revision Code, Item Variant Code, Service Item Number, Dimension Set Id, Sales Event Code, Unit of Measure, Sales Quantity, Sales Amount, Sales Amount (TCY), Sales Order Document, Credit Quantity, Credit Amount, Credit Amount (TCY), Return Quantity, Return Amount, Return Amount (TCY), Return Reason Code, Return Reason, Return Order Document, Net Sales Quantity, Net Sales Amount, Net Sales Amount (TCY), Cost Amount, Gross Profit Amount, Discount Amount, Discount Amount (TCY), Discount Reason Code, Discount Reason, Other Charges Amount, Other Charges Amount (TCY), Tax 1 Code, Tax 1 Amount, Tax 2 Code, Tax 2 Amount, Number Sales Lines, Number Credit Lines, Number Return Lines, Number Discount Lines, Deleted Flag, Excluded Flag, Source Log Key, Dimension 01 Key, Dimension 02 Key, Dimension 03 Key, Dimension 04 Key, Dimension 05 Key, Dimension 06 Key, Dimension 07 Key, Dimension 08 Key, Dimension 09 Key, Dimension 10 Key, gpb Sales Amount, gpb Return Amount, gpb Net Sales Amount, gpb Cost Amount, gpb Gross Profit Amount, gpb Discount Amount, gpb Discount%, gpb Sales Quantity, gpb Net Sales Quantity</p>
+      <p><strong>Null counts (top 10):</strong></p>
+      <pre>Sales Txn Key: 0
+Company Code: 0
+Source Code: 0
+Record Type: 0
+Sales Txn Document: 0
+Business Unit Key: 0
+Company Key: 0
+Currency Key: 0
+Customer Key: 0
+Customer Category Hrchy Key: 0
+Customer Geography Hrchy Key: 0
+Customer Ship-to Key: 0
+Division Key: 0
+Facility Key: 0
+Item Key: 0
+Item Category Hrchy Key: 0
+Item Variant Key: 0
+Location Key: 0
+Posting Date Key: 0
+Sales Event Key: 0</pre>
+      <p><strong>Top values (sample):</strong></p>
+      <pre>Company Code: [('US', 49712), ('CA', 19914), ('MX', 11797)]
+Source Code: [('Demo', 81423)]
+Sales Txn Document: [('IN029657.0001', 1), ('IN018517.0004', 1), ('IN018442.0002', 1), ('IN018359.0001', 1), ('IN018640.0002', 1)]
+Sales Txn Type: [('Sales Invoice', 79202), ('Sales Return', 2221)]
+Sales Txn Number: [('IN029608', 4), ('IN018517', 4), ('IN018442', 4), ('IN029821', 4), ('IN028342', 4)]
+Sales Txn Header Document: [('IN029608', 4), ('IN018517', 4), ('IN018442', 4), ('IN029821', 4), ('IN028342', 4)]
+Txn Date: [('2017-09-01', 94), ('2018-11-15', 93), ('2021-08-03', 92), ('2017-09-06', 92), ('2019-01-07', 90)]
+Posting Date: [('2017-09-01', 94), ('2018-11-15', 93), ('2021-08-03', 92), ('2017-09-06', 92), ('2019-01-07', 90)]
+Posting Time: [(None, 81423)]
+Warehouse Code: [(None, 81423)]</pre>
+    </div>
+  
+
+  <hr/>
+  <p>Generated by Your Team Name - AI CODEFIX 2025</p>
+</body>
+</html>
